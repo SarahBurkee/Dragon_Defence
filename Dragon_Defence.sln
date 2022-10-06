@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon_Defence", "Dragon_Defence\Dragon_Defence.csproj", "{CDA8E2B1-FA29-4CF3-8986-3AD16C3CEAC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDA8E2B1-FA29-4CF3-8986-3AD16C3CEAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA8E2B1-FA29-4CF3-8986-3AD16C3CEAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA8E2B1-FA29-4CF3-8986-3AD16C3CEAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA8E2B1-FA29-4CF3-8986-3AD16C3CEAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC6D9BE9-7E82-458C-B8F5-C319D5693A5D}
+	EndGlobalSection
+EndGlobal
