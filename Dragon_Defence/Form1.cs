@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace Dragon_Defence
@@ -15,6 +17,11 @@ namespace Dragon_Defence
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void PnlGame_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

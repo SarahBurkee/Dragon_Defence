@@ -124,4 +124,13 @@
   <data name="backgroundfitting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundfitting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="goowingfinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goowingfinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

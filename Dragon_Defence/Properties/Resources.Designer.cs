@@ -73,9 +73,39 @@ namespace Dragon_Defence.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dragon1 {
+            get {
+                object obj = ResourceManager.GetObject("dragon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragon2 {
+            get {
+                object obj = ResourceManager.GetObject("dragon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gamebackgroundfitting {
             get {
                 object obj = ResourceManager.GetObject("gamebackgroundfitting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goowingfinal {
+            get {
+                object obj = ResourceManager.GetObject("goowingfinal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

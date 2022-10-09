@@ -28,7 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.BackColor = System.Drawing.Color.LightGray;
+            this.BtnBack.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBack.Location = new System.Drawing.Point(12, 12);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(97, 35);
+            this.BtnBack.TabIndex = 5;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.LightGray;
+            this.BtnExit.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.Location = new System.Drawing.Point(904, 12);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(97, 35);
+            this.BtnExit.TabIndex = 6;
+            this.BtnExit.Text = "Exit";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // HighScores
             // 
@@ -36,6 +62,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Dragon_Defence.Properties.Resources.backgroundfitting;
             this.ClientSize = new System.Drawing.Size(1013, 661);
+            this.Controls.Add(this.BtnExit);
+            this.Controls.Add(this.BtnBack);
             this.DoubleBuffered = true;
             this.Name = "HighScores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -45,5 +73,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

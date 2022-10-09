@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBack = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,12 +68,25 @@
             this.BtnBack.UseVisualStyleBackColor = false;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.LightGray;
+            this.BtnExit.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.Location = new System.Drawing.Point(904, 12);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(97, 35);
+            this.BtnExit.TabIndex = 6;
+            this.BtnExit.Text = "Exit";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // Instructions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Dragon_Defence.Properties.Resources.backgroundfitting;
             this.ClientSize = new System.Drawing.Size(1013, 661);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -90,5 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnInstructions = new System.Windows.Forms.Button();
             this.BtnHighScore = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnPlay
@@ -81,6 +82,18 @@
             this.BtnHighScore.UseVisualStyleBackColor = false;
             this.BtnHighScore.Click += new System.EventHandler(this.BtnHighScore_Click);
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.LightGray;
+            this.BtnExit.Font = new System.Drawing.Font("Poor Richard", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.Location = new System.Drawing.Point(839, 12);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(160, 49);
+            this.BtnExit.TabIndex = 4;
+            this.BtnExit.Text = "Exit";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // FormStartup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,6 +101,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Dragon_Defence.Properties.Resources.backgroundfitting;
             this.ClientSize = new System.Drawing.Size(1011, 661);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnHighScore);
             this.Controls.Add(this.BtnInstructions);
             this.Controls.Add(this.label1);
@@ -107,5 +121,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnInstructions;
         private System.Windows.Forms.Button BtnHighScore;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

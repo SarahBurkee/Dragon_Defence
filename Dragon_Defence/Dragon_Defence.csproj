@@ -122,5 +122,14 @@
   <ItemGroup>
     <None Include="Resources\backgroundfitting.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goowingfinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
