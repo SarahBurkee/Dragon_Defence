@@ -35,32 +35,6 @@ namespace Dragon_Defence
         }
 
         /// <summary>
-        /// Remove this button?
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnStart_Click(object sender, EventArgs e)
-        {
-            playerName = TxtName.Text;
-
-            if (Regex.IsMatch(playerName, @"^[a-zA-Z]+$")) // Checks playerName for letters.
-            {
-                // If playerName valid (only letters) show the game form and hide this one.
-                Form1 form4 = new Form1();
-                form4.Show();
-                this.Hide();
-            }
-
-            else
-            {
-                // If playerName is invalid, clear txtName and focus on it to try again.
-                MessageBox.Show("Please enter a valid name, this textbox only accepts alphabetical characters.");
-                TxtName.Clear();
-                TxtName.Focus();
-            }
-        }
-
-        /// <summary>
         /// When the button is clicked check that the player's name is valid and set up
         /// the game in regards to the difficulty level.
         /// </summary>
@@ -73,7 +47,7 @@ namespace Dragon_Defence
             if (Regex.IsMatch(playerName, @"^[a-zA-Z]+$")) // Checks playerName for letters.
             {
                 // If playerName valid (only letters) show the game form and hide this one.
-                Form1 form4 = new Form1();
+                Form1 form4 = new Form1(playerName, "Easy");
                 form4.Show();
                 this.Hide();
             }
@@ -81,7 +55,7 @@ namespace Dragon_Defence
             else
             {
                 // If playerName is invalid, clear txtName and focus on it to try again.
-                MessageBox.Show("Please enter a valid name, this textbox only accepts alphabetical characters.");
+                MessageBox.Show("Please enter a valid name before selecting a level, the textbox only accepts alphabetical characters.");
                 TxtName.Clear();
                 TxtName.Focus();
             }
@@ -100,7 +74,7 @@ namespace Dragon_Defence
             if (Regex.IsMatch(playerName, @"^[a-zA-Z]+$")) // Checks playerName for letters.
             {
                 // If playerName valid (only letters) show the game form and hide this one.
-                Form1 form4 = new Form1();
+                Form1 form4 = new Form1(playerName, "Medium");
                 form4.Show();
                 this.Hide();
             }
@@ -108,7 +82,7 @@ namespace Dragon_Defence
             else
             {
                 // If playerName is invalid, clear txtName and focus on it to try again.
-                MessageBox.Show("Please enter a valid name, this textbox only accepts alphabetical characters.");
+                MessageBox.Show("Please enter a valid name before selecting a level, the textbox only accepts alphabetical characters.");
                 TxtName.Clear();
                 TxtName.Focus();
             }
@@ -127,7 +101,7 @@ namespace Dragon_Defence
             if (Regex.IsMatch(playerName, @"^[a-zA-Z]+$")) // Checks playerName for letters.
             {
                 // If playerName valid (only letters) show the game form and hide this one.
-                Form1 form4 = new Form1();
+                Form1 form4 = new Form1(playerName, "Hard");
                 form4.Show();
                 this.Hide();
             }
@@ -135,7 +109,7 @@ namespace Dragon_Defence
             else
             {
                 // If playerName is invalid, clear txtName and focus on it to try again.
-                MessageBox.Show("Please enter a valid name, this textbox only accepts alphabetical characters.");
+                MessageBox.Show("Please enter a valid name before selecting a level, the textbox only accepts alphabetical characters.");
                 TxtName.Clear();
                 TxtName.Focus();
             }

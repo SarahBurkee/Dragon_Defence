@@ -31,7 +31,6 @@
             this.BtnHome = new System.Windows.Forms.Button();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BtnStart = new System.Windows.Forms.Button();
             this.BtnEasy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnMedium = new System.Windows.Forms.Button();
@@ -68,18 +67,6 @@
             this.label2.Size = new System.Drawing.Size(246, 36);
             this.label2.TabIndex = 7;
             this.label2.Text = "Enter Player Name:";
-            // 
-            // BtnStart
-            // 
-            this.BtnStart.BackColor = System.Drawing.Color.LightGray;
-            this.BtnStart.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStart.Location = new System.Drawing.Point(454, 595);
-            this.BtnStart.Name = "BtnStart";
-            this.BtnStart.Size = new System.Drawing.Size(97, 35);
-            this.BtnStart.TabIndex = 8;
-            this.BtnStart.Text = "Start";
-            this.BtnStart.UseVisualStyleBackColor = false;
-            this.BtnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
             // BtnEasy
             // 
@@ -155,7 +142,6 @@
             this.Controls.Add(this.BtnMedium);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnEasy);
-            this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.BtnHome);
@@ -173,7 +159,6 @@
         private System.Windows.Forms.Button BtnHome;
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Button BtnEasy;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnMedium;
