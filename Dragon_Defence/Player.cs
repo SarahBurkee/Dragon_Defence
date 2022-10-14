@@ -124,5 +124,13 @@ namespace Dragon_Defence
         {
             Application.Exit();
         }
+
+        private void TxtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsControl(e.KeyChar) && !Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -40,7 +40,22 @@ namespace Dragon_Defence
             // Sets the level of difficulty that the user entered onto the label.
             LblDifficulty.Text = levels;
 
-            for (int i = 0; i < 6; i++)
+            if (levels == "Easy")
+            {
+                strength = 1000;
+            }
+            else if (levels == "Medium")
+            {
+                strength = 500;
+            }
+            else if (levels == "Hard")
+            {
+                strength = 100;
+            }
+
+            LblStrength.Text = strength.ToString();
+
+            for (int i = 0; i < 9; i++)
             {
                 int displacement = 10 + (i * 75);
 
@@ -75,11 +90,11 @@ namespace Dragon_Defence
             // get the graphics used to paint on the Form control
             g = e.Graphics;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 9; i++)
             {
                 // generate a random number from 4 to 8 and put it in rndmspeed
-                int rndmspeed = yspeed.Next(4, 8);
-                monster[i].y += rndmspeed;
+                int rndmspeed = yspeed.Next(2, 15);
+                monster[i].x += rndmspeed;
 
 
                 //call the Planet class's drawPlanet method to draw the images
@@ -195,15 +210,15 @@ namespace Dragon_Defence
 
         private void tmrMonster_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 9; i++)
             {
                 //if a marshmallow reaches the bottom of the Game Area reposition it at the top
-                if (monster[i].y >= PnlGame.Height)
+                if (monster[i].x >= PnlGame.Width)
                 {
                     strength -= 1;// lose a life
                     LblStrength.Text = strength.ToString();// display number of lives
                     CheckStrength();
-                    monster[i].y = 30;
+                    monster[i].x = 30;
                 }
             }
 

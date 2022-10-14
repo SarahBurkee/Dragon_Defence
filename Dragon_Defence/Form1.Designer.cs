@@ -115,6 +115,7 @@
             this.BtnPause.Name = "BtnPause";
             this.BtnPause.Size = new System.Drawing.Size(92, 30);
             this.BtnPause.TabIndex = 17;
+            this.BtnPause.TabStop = false;
             this.BtnPause.Text = "Pause";
             this.BtnPause.UseVisualStyleBackColor = false;
             this.BtnPause.Click += new System.EventHandler(this.BtnPause_Click);
@@ -127,6 +128,7 @@
             this.BtnPlay.Name = "BtnPlay";
             this.BtnPlay.Size = new System.Drawing.Size(92, 30);
             this.BtnPlay.TabIndex = 16;
+            this.BtnPlay.TabStop = false;
             this.BtnPlay.Text = "Play";
             this.BtnPlay.UseVisualStyleBackColor = false;
             this.BtnPlay.Click += new System.EventHandler(this.BtnPlay_Click);
@@ -227,6 +229,7 @@
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(92, 30);
             this.BtnBack.TabIndex = 5;
+            this.BtnBack.TabStop = false;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = false;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);

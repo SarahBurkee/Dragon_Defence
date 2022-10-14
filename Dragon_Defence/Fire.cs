@@ -30,7 +30,7 @@ namespace Dragon_Defence
             //this code works out the speed of the fire to be used in the moveFire method
             xSpeed = 30 * (Math.Cos((fireRotate - 90) * Math.PI / 180));
             ySpeed = 30 * (Math.Sin((fireRotate + 90) * Math.PI / 180));
-            //calculate x,y to move fire to middle of spaceship in drawFire method
+            //calculate x,y to move fire to middle of dragon in drawFire method
             x = dragonRec.X + dragonRec.Width / 2;
             y = dragonRec.Y + dragonRec.Height / 2;
             //pass fireRotate angle to fireRotated so that it can be used in the drawFire method

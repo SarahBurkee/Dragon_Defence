@@ -22,6 +22,7 @@ namespace Dragon_Defence
             monsterRec = new Rectangle(x, y, width, height);
             g.DrawImage(monsterImage, monsterRec);
         }
+
         public void MoveMonster()
         {
             monsterRec.Location = new Point(x, y);
@@ -31,9 +32,9 @@ namespace Dragon_Defence
         //Create a constructor (initialises the values of the fields)
         public Monster(int displacement)
         {
-            x = displacement;
-            y = 10;
-            width = 100;
+            x = 10;
+            y = displacement;
+            width = 110;
             height = 80;
             //planetImage contains the marshmallow.png image
             monsterImage = Properties.Resources.goowingfinal;
